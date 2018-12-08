@@ -102,3 +102,19 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Editors
+.vscode
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# robotframework
+tests/results
