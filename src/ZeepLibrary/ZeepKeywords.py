@@ -34,6 +34,9 @@ class ZeepKeywords:
         
         self.builtin.log('Creating session: %s' % url_or_path, 'DEBUG')
         s = session = requests.Session()
+
+        auth = requests.auth.HTTPBasicAuth(*auth) if auth else None
+
         s.auth = auth if auth else s.auth
         s.proxies = proxies if proxies else s.proxies
 
